@@ -1,0 +1,11 @@
+2025-05-04 19:31:45,010 [INFO] Starting Watchdog Agent Pipeline with scheduler...
+2025-05-04 19:31:45,037 [INFO] Triggering pipeline run...
+2025-05-04 19:31:45,912 [INFO] WatchdogAgent found 1 file(s) to report.
+2025-05-04 19:31:45,918 [ERROR] WatchdogAgent error: 'PipelineState' object is not a mapping
+2025-05-04 19:31:45,922 [ERROR] Pipeline encountered an error: 'PipelineState' object is not a mapping
+2025-05-04 19:31:50,203 [INFO] Failure email sent to jatindeepsingh1997@gmail.com
+2025-05-04 19:32:50,795 [INFO] Triggering pipeline run...
+2025-05-04 19:32:50,816 [INFO] WatchdogAgent found 1 file(s) to report.
+2025-05-04 19:32:50,816 [ERROR] WatchdogAgent error: 'PipelineState' object is not a mapping
+2025-05-04 19:32:50,817 [ERROR] Pipeline encountered an error: 'PipelineState' object is not a mapping
+2025-05-04 19:32:53,903 [INFO] Failure email sent to jatindeepsingh1997@gmail.com
