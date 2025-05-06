@@ -1,0 +1,21 @@
+2025-05-06 19:56:46,032 [INFO] Starting Watchdog Agent Pipeline with scheduler...
+2025-05-06 19:56:46,032 [INFO] Triggering pipeline run...
+2025-05-06 19:56:46,051 [INFO] Partial
+2025-05-06 19:56:46,051 [INFO] f Subfolder :{subfolder} already exist.
+2025-05-06 19:56:46,052 [INFO] f Subfolder :{subfolder} already exist.
+2025-05-06 19:56:46,057 [INFO] {'file': 'Partial.csv', 'records': 3, 'data_status': 1, 'file_path': 'Updated\\Partial\\Partial.csv', 'revised_file_path': 'Revised\\Partial\\Partial.csv'}
+2025-05-06 19:56:46,058 [INFO] Preprocessing:Updated\Partial\Partial.csv
+2025-05-06 19:56:49,867 [INFO] Email sent for Partial.csv with status the file meet the minimum required data for Modelling. Please update the above file and resend it for next iteration.
+2025-05-06 19:56:49,867 [INFO] ClassifierAgent completed notifications
+2025-05-06 19:56:49,868 [ERROR] Pipeline encountered an error: can only concatenate str (not "set") to str
+2025-05-06 19:56:53,101 [INFO] Failure email sent to jatindeepsingh1997@gmail.com
+2025-05-06 19:57:53,346 [INFO] Triggering pipeline run...
+2025-05-06 19:57:53,374 [INFO] Partial
+2025-05-06 19:57:53,374 [INFO] f Subfolder :{subfolder} already exist.
+2025-05-06 19:57:53,374 [INFO] f Subfolder :{subfolder} already exist.
+2025-05-06 19:57:53,383 [INFO] {'file': 'Partial.csv', 'records': 3, 'data_status': 1, 'file_path': 'Updated\\Partial\\Partial.csv', 'revised_file_path': 'Revised\\Partial\\Partial.csv'}
+2025-05-06 19:57:53,384 [INFO] Preprocessing:Updated\Partial\Partial.csv
+2025-05-06 19:57:57,147 [INFO] Email sent for Partial.csv with status the file meet the minimum required data for Modelling. Please update the above file and resend it for next iteration.
+2025-05-06 19:57:57,147 [INFO] ClassifierAgent completed notifications
+2025-05-06 19:57:57,149 [ERROR] Pipeline encountered an error: can only concatenate str (not "set") to str
+2025-05-06 19:58:00,345 [INFO] Failure email sent to jatindeepsingh1997@gmail.com

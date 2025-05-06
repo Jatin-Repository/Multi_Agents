@@ -59,7 +59,6 @@ class WatchdogAgent:
             file_path = os.path.join(self.folder_path, latest_file)
             df = pd.read_csv(file_path) if latest_file.endswith('.csv') else pd.read_excel(file_path)
             report = {"file": latest_file, "records": len(df)}
-
             logging.info(f"WatchdogAgent picked latest file: {latest_file}")
             state["watchdog_state"] = "checked"
             state["reports"] = [report]
@@ -81,12 +80,13 @@ class ReceiverAgent:
 class ClassifierAgent: # Communication Hub
     def __call__(self, state):
         try:
+            # logger.info(state.get("reports", []))
             for report in state.get("reports", []):
                 status = "good to go" if report["records"] > 0 else "empty file"
                 self.send_email(report["file"], status)
                 logging.info("ClassifierAgent completed notifications")
                 state["classifier_state"] = "notifications sent"
-                return state
+            return state
         except Exception as e:
             logging.error(f"ClassifierAgent error: {e}")
             state["classifier_state"] = f"error: {e}"
@@ -98,10 +98,12 @@ class ClassifierAgent: # Communication Hub
         msg['Subject'] = subject
         msg['From'] = EMAIL_ADDRESS
         msg['To'] = SENDER_EMAIL_ADDRESS  # Replace with actual recipient
-
+        #logger.info("Hi")
         with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
             server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             server.sendmail(EMAIL_ADDRESS, SENDER_EMAIL_ADDRESS, msg.as_string())
         logger.info(f"Email sent for {filename} with status {status}")
     
+
+
